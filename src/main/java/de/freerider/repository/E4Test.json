@@ -1,0 +1,151 @@
+[
+  {
+    "serialnumber": 1,
+    "uuid": 12734634,
+    "time-sent": 1639502608151,
+    "customer-id": "1",
+    "customer-name": "Meyer, Eric OK",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000"
+  },
+  {
+    "serialnumber": 2,
+    "uuid": 12734634,
+    "time-sent": 1639502608151,
+    "customer-id": "1AA",
+    "customer-name": "Meyer, Eric 4.i",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000"
+  },
+  {
+    "serialnumber": 3,
+    "uuid": 46508658,
+    "time-sent": 1639502608151,
+    "customer-id": "-2",
+    "customer-name": "Bayer, Anne 4.ii",
+    "customer-contacts": "anne24@yahoo.de; (030) 3481-23352"
+  },
+  {
+    "serialnumber": 4,
+    "uuid": 59691133,
+    "time-sent": 1639502608151,
+    "customer-id": 2,
+    "customer-name": "Schulz-Mueller, Tim 4.iii",
+    "customer-contacts": "tim2346@gmx.de"
+  },
+  {
+    "serialnumber": 5,
+    "uuid": 12734634,
+    "time-sent": 1639502608151,
+    "customer-ID": "1",
+    "customer-name": "Meyer, Eric 4.iv",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000"
+  },
+  {
+    "serialnumber": "100",
+    "uuid": 46508658,
+    "time-sent": 1639502608151,
+    "customer-id": "2",
+    "customer-name": "Bayer, Anne 5.i",
+    "customer-contacts": "anne24@yahoo.de; (030) 3481-23352"
+  },
+  {
+    "serialnumber": -200,
+    "uuid": 59691133,
+    "time-sent": 1639502608151,
+    "customer-id": "3",
+    "customer-name": "Schulz-Mueller, Tim 5.ii",
+    "customer-contacts": "tim2346@gmx.de"
+  },
+  {
+    "serialnumber": 8,
+    "uuid": "100",
+    "time-sent": 1639502608151,
+    "customer-id": "1",
+    "customer-name": "Meyer, Eric 6.i",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000"
+  },
+  {
+    "serialnumber": 9,
+    "time-sent": 1639502608151,
+    "customer-id": "2",
+    "customer-name": "Bayer, Anne 6.ii",
+    "customer-contacts": "anne24@yahoo.de; (030) 3481-23352"
+  },
+  {
+    "serialnumber": 10,
+    "uuid": -200,
+    "time-sent": 1639502608151,
+    "customer-id": "3",
+    "customer-name": "Schulz-Mueller, Tim 6.iii",
+    "customer-contacts": "tim2346@gmx.de"
+  },
+  {
+    "serialnumber": 11,
+    "uuid": 12734634,
+    "time-sent": "1639502608151",
+    "customer-id": "1",
+    "customer-name": "Meyer, Eric 7.i",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000"
+  },
+  {
+    "serialnumber": 12,
+    "uuid": 46508658,
+    "time-sent": 1600502608151,
+    "customer-id": "2",
+    "customer-name": "Bayer, Anne 7.ii",
+    "customer-contacts": "anne24@yahoo.de; (030) 3481-23352"
+  },
+  {
+    "serialnumber": 13,
+    "uuid": 59691133,
+    "time-sent": 1999502608151,
+    "customer-id": "3",
+    "customer-name": "Schulz-Mueller, Tim 7.iii",
+    "customer-contacts": "tim2346@gmx.de"
+  },
+  {
+    "serialnumber": 14,
+    "uuid": 12734634,
+    "time-sent": 1639502608151,
+    "customer-id": "1",
+    "customer-name": "",
+    "customer-contacts": "eric98@yahoo.com; (030) 7000-640000 8.i"
+  },
+  {
+    "serialnumber": 15,
+    "uuid": 46508658,
+    "time-sent": 1639502608151,
+    "customer-id": "2",
+    "customer-contacts": "anne24@yahoo.de; (030) 3481-23352 8.ii"
+  },
+  {
+    "serialnumber": 16,
+    "uuid": 59691133,
+    "time-sent": 1639502608151,
+    "customer-id": "3",
+    "customer-name": "X",
+    "customer-contacts": "tim2346@gmx.de 8.iii"
+  },
+  {
+    "serialnumber": 17,
+    "uuid": 12734634,
+    "time-sent": 1639502608151,
+    "customer-id": "1",
+    "customer-name": "Meyer, Eric 9.i",
+    "customer-contacts": ""
+  },
+  {
+    "serialnumber": 18,
+    "uuid": 46508658,
+    "time-sent": 1639502608151,
+    "customer-id": "2",
+    "customer-name": "Bayer, Anne 9.ii"
+  },
+  {
+    "serialnumber": 19,
+    "uuid": 59691133,
+    "time-sent": 1639502608151,
+    "customer-id": "3",
+    "customer-name": "Schulz-Mueller, Tim 9.iii",
+    "customer-contacts": ";;"
+  }
+]
