@@ -106,6 +106,7 @@ public class CustomerDTO {
 		return createValidated();
 	}
 
+	@Deprecated
 	private Optional<Customer> create_() {
 		//
 		// TODO: check validity of attributes before creating Customer object
@@ -128,6 +129,11 @@ public class CustomerDTO {
 		return Optional.ofNullable(customer);
 	}
 
+	/**
+	 * Private method to create Customer Object from DTO (including validity check)
+	 * 
+	 * @author t-onia
+	 */
 	private Optional<Customer> createValidated() {
 		Customer customer = null;
 		// check validity of attributes before creating Customer
