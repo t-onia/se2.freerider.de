@@ -93,7 +93,7 @@ public class CustomerDTO {
 	 * Non-public default constructor needed by de-serialization to create new DTO.
 	 */
 	CustomerDTO() {
-		System.out.println("CustomerDTO: default constructor called");
+		//System.out.println("CustomerDTO: default constructor called");
 	}
 
 	/**

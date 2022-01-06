@@ -79,7 +79,7 @@ public class CustomersDTOController implements CustomersDTOAPI {
 			Optional<Customer> customer = dto.create();
 			if (customer.isPresent()) {
 				if (customerRepository.findById(customer.get().getId()).isPresent()) {
-					System.err.println("Id is already used.");
+					System.err.println("Error: Id is already used.");
 					unaccepted.add(dto);
 				} else {
 					customerRepository.save(customer.get());

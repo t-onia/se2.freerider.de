@@ -8,67 +8,52 @@ Hello, freerider.de
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.0)
 
-2022-01-06 22:12:25.554  INFO 8436 --- [           main] de.freerider.app.Application             : Starting Application using Java 16.0.2 on LAPTOP-QDV270OH with PID 8436 (C:\Users\anton\workspaces\SE-2\se2.freerider.de\target\classes started by anton in C:\Users\anton\workspaces\SE-2\se2.freerider.de)
-2022-01-06 22:12:25.560  INFO 8436 --- [           main] de.freerider.app.Application             : No active profile set, falling back to default profiles: default
-2022-01-06 22:12:28.752  INFO 8436 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-01-06 22:12:28.776  INFO 8436 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-06 22:12:28.776  INFO 8436 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-06 22:12:29.019  INFO 8436 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-06 22:12:29.020  INFO 8436 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3297 ms
-2022-01-06 22:12:30.523  INFO 8436 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-06 22:12:31.114  INFO 8436 --- [           main] de.freerider.app.Application             : Started Application in 6.413 seconds (JVM running for 8.158)
+2022-01-06 23:03:59.655  INFO 9000 --- [           main] de.freerider.app.Application             : Starting Application using Java 16.0.2 on LAPTOP-QDV270OH with PID 9000 (C:\Users\anton\workspaces\SE-2\se2.freerider.de\target\classes started by anton in C:\Users\anton\workspaces\SE-2\se2.freerider.de)
+2022-01-06 23:03:59.666  INFO 9000 --- [           main] de.freerider.app.Application             : No active profile set, falling back to default profiles: default
+2022-01-06 23:04:03.462  INFO 9000 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-06 23:04:03.487  INFO 9000 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-06 23:04:03.487  INFO 9000 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-06 23:04:03.826  INFO 9000 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-06 23:04:03.826  INFO 9000 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3853 ms
+2022-01-06 23:04:06.131  INFO 9000 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-06 23:04:06.964  INFO 9000 --- [           main] de.freerider.app.Application             : Started Application in 8.55 seconds (JVM running for 10.629)
 repository<Customer> with: 3 entries
-2022-01-06 22:19:59.827  INFO 8436 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-06 22:19:59.828  INFO 8436 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-06 22:19:59.830  INFO 8436 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
-CustomerDTO: default constructor called
+2022-01-06 23:05:03.546  INFO 9000 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-06 23:05:03.546  INFO 9000 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-06 23:05:03.549  INFO 9000 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 PUT /api/v1/customers
 Customer-DTO: serialnumber: 1, uuid: 12734634, customer-id: "1", customer-name: "Meyer, Eric OK", customer-contacts: "eric98@yahoo.com; (030) 7000-640000", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "1", lastName: "Meyer", firstName: "Eric OK", contactsCount: 2, contact: "eric98@yahoo.com", contact: "(030) 7000-640000"
 Customer-DTO: serialnumber: 2, uuid: 12734634, customer-id: "1AA", customer-name: "Meyer, Eric 4.i", customer-contacts: "eric98@yahoo.com; (030) 7000-640000", time-sent: "2021/12/14, 18:23:28.151"
-Error: invalid JSON object rejected, reason validateRule_A: invalid id: "1AA" NumberFormatException converting to long.
 Customer-OBJ: empty.
+Error: invalid JSON object rejected, reason validateRule_A: invalid id: "1AA" NumberFormatException converting to long.
+Error: invalid JSON object rejected, reason validateRule_A: invalid id: value out of range: 0 <= -2 <= 9223372036854775807
 Customer-DTO: serialnumber: 3, uuid: 46508658, customer-id: "-2", customer-name: "Bayer, Anne 4.ii", customer-contacts: "anne24@yahoo.de; (030) 3481-23352", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: empty.
-Error: invalid JSON object rejected, reason validateRule_A: invalid id: value out of range: 0 <= -2 <= 9223372036854775807
 Customer-DTO: serialnumber: 4, uuid: 59691133, customer-id: "2", customer-name: "Schulz-Mueller, Tim 4.iii", customer-contacts: "tim2346@gmx.de", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "2", lastName: "Schulz-Mueller", firstName: "Tim 4.iii", contactsCount: 1, contact: "tim2346@gmx.de"
 Customer-DTO: serialnumber: 5, uuid: 12734634, customer-id: "null", customer-name: "Meyer, Eric 4.iv", customer-contacts: "eric98@yahoo.com; (030) 7000-640000", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: empty.
+Error: invalid JSON object rejected, reason validateRule_A: invalid id: null or empty, string: null
 Customer-DTO: serialnumber: 100, uuid: 46508658, customer-id: "2", customer-name: "Bayer, Anne 5.i", customer-contacts: "anne24@yahoo.de; (030) 3481-23352", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "2", lastName: "Bayer", firstName: "Anne 5.i", contactsCount: 2, contact: "anne24@yahoo.de", contact: "(030) 3481-23352"
-Error: invalid JSON object rejected, reason validateRule_A: invalid id: null or empty, string: null
 Customer-DTO: serialnumber: -200, uuid: 59691133, customer-id: "3", customer-name: "Schulz-Mueller, Tim 5.ii", customer-contacts: "tim2346@gmx.de", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: empty.
-Error: invalid JSON object rejected, reason validateRule_B: value out of range: 0 <= -200 <= 9223372036854775807
 Customer-DTO: serialnumber: 8, uuid: 100, customer-id: "1", customer-name: "Meyer, Eric 6.i", customer-contacts: "eric98@yahoo.com; (030) 7000-640000", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "1", lastName: "Meyer", firstName: "Eric 6.i", contactsCount: 2, contact: "eric98@yahoo.com", contact: "(030) 7000-640000"
 Customer-DTO: serialnumber: 9, uuid: 0, customer-id: "2", customer-name: "Bayer, Anne 6.ii", customer-contacts: "anne24@yahoo.de; (030) 3481-23352", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "2", lastName: "Bayer", firstName: "Anne 6.ii", contactsCount: 2, contact: "anne24@yahoo.de", contact: "(030) 3481-23352"
+Error: invalid JSON object rejected, reason validateRule_B: value out of range: 0 <= -200 <= 9223372036854775807
+Error: invalid JSON object rejected, reason validateRule_C: value out of range: 0 <= -200 <= 9223372036854775807
 Customer-DTO: serialnumber: 10, uuid: -200, customer-id: "3", customer-name: "Schulz-Mueller, Tim 6.iii", customer-contacts: "tim2346@gmx.de", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: empty.
 Customer-DTO: serialnumber: 11, uuid: 12734634, customer-id: "1", customer-name: "Meyer, Eric 7.i", customer-contacts: "eric98@yahoo.com; (030) 7000-640000", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "1", lastName: "Meyer", firstName: "Eric 7.i", contactsCount: 2, contact: "eric98@yahoo.com", contact: "(030) 7000-640000"
 Customer-DTO: serialnumber: 12, uuid: 46508658, customer-id: "2", customer-name: "Bayer, Anne 7.ii", customer-contacts: "anne24@yahoo.de; (030) 3481-23352", time-sent: "2020/09/19, 10:03:28.151"
 Customer-OBJ: empty.
+Error: invalid JSON object rejected, reason validateRule_D: value out of range: 1609459200000 <= 1600502608151 <= 1641506703807
+Error: invalid JSON object rejected, reason validateRule_D: value out of range: 1609459200000 <= 1999502608151 <= 1641506703807
+Error: invalid JSON object rejected, reason validateRule_E: string: "" (null or empty)
 Customer-DTO: serialnumber: 13, uuid: 59691133, customer-id: "3", customer-name: "Schulz-Mueller, Tim 7.iii", customer-contacts: "tim2346@gmx.de", time-sent: "2033/05/12, 11:23:28.151"
 Customer-OBJ: empty.
 Customer-DTO: serialnumber: 14, uuid: 12734634, customer-id: "1", customer-name: "", customer-contacts: "eric98@yahoo.com; (030) 7000-640000 8.i", time-sent: "2021/12/14, 18:23:28.151"
@@ -79,10 +64,6 @@ Customer-DTO: serialnumber: 16, uuid: 59691133, customer-id: "3", customer-name:
 Customer-OBJ: id: "3", lastName: "X", firstName: "", contactsCount: 1, contact: "tim2346@gmx.de 8.iii"
 Customer-DTO: serialnumber: 17, uuid: 12734634, customer-id: "1", customer-name: "Meyer, Eric 9.i", customer-contacts: "", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: id: "1", lastName: "Meyer", firstName: "Eric 9.i", contactsCount: 0
-Error: invalid JSON object rejected, reason validateRule_C: value out of range: 0 <= -200 <= 9223372036854775807
-Error: invalid JSON object rejected, reason validateRule_D: value out of range: 1609459200000 <= 1600502608151 <= 1641504000003
-Error: invalid JSON object rejected, reason validateRule_D: value out of range: 1609459200000 <= 1999502608151 <= 1641504000003
-Error: invalid JSON object rejected, reason validateRule_E: string: "" (null or empty)
 Error: invalid JSON object rejected, reason validateRule_E: string: "null" (null or empty)
 Customer-DTO: serialnumber: 18, uuid: 46508658, customer-id: "2", customer-name: "Bayer, Anne 9.ii", customer-contacts: "null", time-sent: "2021/12/14, 18:23:28.151"
 Customer-OBJ: empty.
