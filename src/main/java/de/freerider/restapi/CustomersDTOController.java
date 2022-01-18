@@ -32,7 +32,7 @@ public class CustomersDTOController implements CustomersDTOAPI {
 	/**
 	 * Constructor.
 	 * 
-	 * @param request      HTTP request object
+	 * @param request HTTP request object
 	 */
 	public CustomersDTOController(HttpServletRequest request) {
 		this.request = request;
@@ -104,12 +104,42 @@ public class CustomersDTOController implements CustomersDTOAPI {
 		// TODO: replace by logger
 		System.err.println(request.getMethod() + " " + request.getRequestURI());
 		//
-		dtos.stream().forEach(dto -> {
+		List<CustomerDTO> unaccepted = new ArrayList<CustomerDTO>();
+		if (dtos == null) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+		for (CustomerDTO dto : dtos) {
 			dto.print();
 			Optional<Customer> customerOpt = dto.create();
 			CustomerDTO.print(customerOpt);
-		});
-		return new ResponseEntity<>(null, HttpStatus.ACCEPTED);
+			if (customerOpt.isEmpty()) {
+				unaccepted.add(dto);
+			} else {
+				Optional<Customer> customer = customerRepository.findById(customerOpt.get().getId());
+				if (customer.isPresent()) {
+					// update name
+					if (!customer.get().getName().equals(customerOpt.get().getName())) {
+						customer.get().setName(customerOpt.get().getName());
+						System.out.println("Updated name.");
+					}
+					// update contacts
+					if (!customer.get().getContacts().equals(customerOpt.get().getContacts())) {
+						for (String contact : customerOpt.get().getContacts()) {
+							customer.get().addContact(contact);
+						}
+						System.out.println("Updated contacts.");
+					}
+				} else {
+					System.out.println("Id not found.");
+					return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+				}
+			}
+			System.out.println();
+		}
+		if (!unaccepted.isEmpty()) {
+			return new ResponseEntity<>(unaccepted, HttpStatus.CONFLICT);
+		}
+		return new ResponseEntity<>(unaccepted, HttpStatus.ACCEPTED);
 	}
 
 	@Override

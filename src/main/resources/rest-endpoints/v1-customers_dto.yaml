@@ -51,22 +51,28 @@ paths:
               items:
                 $ref: '#/components/schemas/CustomerDTO'
       responses:
-        '200':
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/CustomerDTO'
         '201':
           description: Created
+        '202':
+          description: Accepted
+        '400':
+          description: Bad Request
         '401':
           description: Unauthorized
         '403':
           description: Forbidden
         '404':
           description: Not Found
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CustomerDTO'
     post:
       tags:
         - customers-dto-controller
@@ -185,18 +191,18 @@ components:
       title: CustomerDTO
       type: object
       properties:
+        customer-contacts:
+          type: string
+        customer-id:
+          type: string
+        customer-name:
+          type: string
         serialnumber:
-          type: integer
-          format: int64
-        uuid:
           type: integer
           format: int64
         time-sent:
           type: integer
           format: int64
-        customer-id:
-          type: string
-        customer-name:
-          type: string
-        customer-contacts:
-          type: string
+        uuid:
+          type: integer
+          format: int64

@@ -171,13 +171,20 @@ public interface CustomersDTOAPI {
 	 */
 	@Operation(summary = "Update existing customers in repository.", description = "Update existing customers in repository.", tags = {
 			"customers-dto-controller" })
-
+	@ApiResponses(value = { // also auto-derived by Swagger
+			@ApiResponse(responseCode = "202", description = "Accepted"),
+			@ApiResponse(responseCode = "400", description = "Bad Request"),
+			@ApiResponse(responseCode = "404", description = "Not Found"),
+			// to remove "404" from docs, set
+			// SwaggerConfig::Docket.useDefaultResponseMessages(true) // ->false
+			@ApiResponse(responseCode = "409", description = "Conflict") })
 	/*
 	 * Spring REST Controller annotation:
 	 */
 	@RequestMapping(method = RequestMethod.PUT, value = "" // relative to interface @RequestMapping
 	)
-	//
+	@ResponseStatus
+	@ResponseBody
 	public ResponseEntity<List<CustomerDTO>> putCustomers(@RequestBody List<CustomerDTO> dtos);
 
 	/**
