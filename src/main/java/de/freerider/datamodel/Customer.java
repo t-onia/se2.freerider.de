@@ -2,12 +2,7 @@ package de.freerider.datamodel;
 
 import java.util.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 /**
  * Class for entity type Customer. Customer is an individual who acts as holder
@@ -19,7 +14,7 @@ import javax.persistence.Transient;
  */
 
 @Entity
-@Table(name = "CUSTOMER")
+@Table(name ="CUSTOMER")
 public class Customer {
 
 	@Id // PRIMARY KEY attribute
