@@ -93,7 +93,14 @@ public interface CustomersDTOAPI {
 	 */
 	@Operation(summary = "Return customer with {id} from repository.", description = "Return customer with {id} from repository.", tags = {
 			"customers-dto-controller" })
-
+	@ApiResponses(value = { // also auto-derived by Swagger
+			@ApiResponse(responseCode = "200", description = "OK", content = @Content(mediaType = "application/json")),
+			@ApiResponse(responseCode = "401", description = "Unauthorized"),
+			@ApiResponse(responseCode = "403", description = "Forbidden"),
+	// to remove "404" from docs, set
+	// SwaggerConfig::Docket.useDefaultResponseMessages(true) // ->false
+		@ApiResponse( responseCode = "404", description = "Not Found")
+	})
 	/*
 	 * Spring REST Controller annotation:
 	 */

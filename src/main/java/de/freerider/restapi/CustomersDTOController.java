@@ -62,7 +62,7 @@ public class CustomersDTOController implements CustomersDTOAPI {
 			re = new ResponseEntity<CustomerDTO>(dto, HttpStatus.OK);
 		} else {
 			System.err.println("No Customer with id: " + id + " was found.");
-			re = new ResponseEntity<CustomerDTO>(HttpStatus.INTERNAL_SERVER_ERROR);
+			re = new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
 		}
 		return re;
 	}
